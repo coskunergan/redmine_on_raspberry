@@ -6,27 +6,27 @@
 
 
 
-# Motivasyon
+# 1-Motivasyon
 
 Gömülü yazılımcılar şirketlerin görünmez kahramanlarıdır, projelerdeki geliştirmeleri ve hata düzelmelerini tam zamanında ve en kısa yoldan yapmaları beklenir. İş döngüsü bu şekildedir ve tekrar eder. Bu döngüye destek sağlamak iş takibini kolaylaştırmak amacıyla hazırlanmış proje yönetim sistemleri arge firmalarının vazgeçilmezidir. Bu başlıkta en populer proje takip sistemlerinden birisi olan **açık kaynaklı [Redmine](https://www.redmine.org/)  proje takip** yazılımını RPi üzerine kurup işletilmesinden bahsedeceğim.
 
 Ayrıca bu kurulum daha önce yayınlamış olduğum [Gitea On RaspberryPi](https://github.com/coskunergan/gitea_on_raspberry) Gitea Server ile Redmine entegrasyonunu içermektedir. Dolayısıyla önce [Gitea](https://github.com/coskunergan/gitea_on_raspberry) kurulumunu tamamlamanızı öneririm.
 
-# Donanım
+# 2-Donanım
 
 Kurulum için daha önceden Gitea Server kurup yayımladığım RaspberryPi3B cihazını kullanıyorum. 
 
-# Redmine Kurulumu
+# 3-Redmine Kurulumu
 
 Öncelikle [RedmineOnRasppberry.sh](https://github.com/coskunergan/redmine_on_raspberry/blob/main/RedmineOnRaspberry.sh) dosyasına gidip tamilatları izleyerek cihazınıza Redmine kurulumunu tamamlayınız. Sonrasında ayarlamalar ve gitea entegrasyonu için aşağıdan devam edeceğiz.
 
-# Redmine Ayarları
+# 4-Redmine Ayarları
 
 Kurulum sonrası http://localhost:5000 adresi üzerinden redmine ana sayfasına girmiş olmalısınız. Admin olarak giriş yapmak için admin kullanıcı adı ve şifresi "admin" dir. ilk girişinizde Redmine sizden yeni bir admin şifresi oluşturmanızı isteyecektir. 
   
 Önemli Not: Admin girişi sonrasında Redmine ilk kuruluma özel default rol ve tanımlamaların yapılmasını önerecektir. Henüz ayarlara dokunmadan buradan dil seçeneğini seçip default kurulumu kabul etmenizi öneriyorum. Aksi halde Bug, Feature, Support gibi temel iş gurupları dahil tüm alanları sizin oluşturmanızı isteyecektir. Bununla uğraşmak istemeyebilirsiniz işin trajikomik tarafı bu öneriyi daha sonra geri dönülmesi mümkün olmayan ilk kurulum ekranında sunması. :) Gerçekten dahice.
   
-# Redmine Gitea Entegrasyonu
+# 5-Redmine Gitea Entegrasyonu
   
 İlk iş olarak ayarlar sekmesinden aşağıdaki görselde olduğu gibi bir api key oluşturmanız gerekiyor. Bu key bizim gitea repolarında oluşan değişiklikleri redmine tarafına aktarmamızda kullanılacak.
   
@@ -48,7 +48,7 @@ Ayrıca ileride işimize yarayacağı için referance keyword kutusuna "Issue" t
   
 
   
-  # Redmine Git Repositories Kurulumu
+  # 6-Redmine Git Repositories Kurulumu
   
   Sıra geldi Gitea içerisinde barındırdığımız bir repositories içeriğinin Redmine üzerinden erişilmesine. Bunun için öncelikle bir Redmine projesi oluşturmalısınız. Daha sonra aşağıda görüldüğü gibi ilgili projenin ayarlarındaki Settings->Repositories sayfasındaki "New Repository" butonuna tıklayarak aşağıdaki sayfada işaretli alanları dolduruyoruz.
   
@@ -74,7 +74,7 @@ Ayrıca ileride işimize yarayacağı için referance keyword kutusuna "Issue" t
   
 
   
-  # Redmine Tortoise ve TurtleMine Entegrasyonu
+  # 7-Redmine Tortoise ve TurtleMine Entegrasyonu
   
   Gelelim son konumuza. Populer windows git client uygulaması olan Tortoise ile TurtleMine eklentisini kullanarak Açık Redmine konularına entegre olmamız gerekiyor.
   

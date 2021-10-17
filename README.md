@@ -30,7 +30,7 @@ Kurulum sonrası http://localhost:5000 adresi üzerinden redmine ana sayfasına 
   
 İlk iş olarak ayarlar sekmesinden aşağıdaki görselde olduğu gibi bir api key oluşturmanız gerekiyor. Bu key bizim gitea repolarında oluşan değişiklikleri redmine tarafına aktarmamızda kullanılacak.
   
-Ayrıca ileride işimize yarayacağı için referance keyword kutusuna "Issue" text anahtarını eklemeyi ununtmayınız.
+Ayrıca ileride işimize yarayacağı için referance keyword kutusuna "Issue" text anahtarını eklemeyi unutmayınız.
   
   
   
@@ -40,7 +40,7 @@ Ayrıca ileride işimize yarayacağı için referance keyword kutusuna "Issue" t
   
   Şimdi yukarıda oluşturulan keyi alt satırdaki link sonuna yapıştırıp aşağıdaki görselde yer alan gitea -> Site Administrator -> Webhook sekmesine giderek yapıştırıyoruz. Böylece bir bağlantı oluşturuluyor. Bu bağlantı sayesinde Gitea Server içerisindeki depolarda gerçekleşen her bir git-push işleminde Redmine linki çalıştırılıyor ve Redmine commit aktiviteleri güncellenmiş oluyor.
   
-  http://<localip>:5000/sys/fetch_changesets?key=FYfTGGXIrIvfWbAyRhRP
+  http://localhost:5000/sys/fetch_changesets?key=FYfTGGXIrIvfWbAyRhRP
   
  
   

@@ -26,9 +26,9 @@ sudo docker run --restart always -d -p 9000:9000 -v /var/run/docker.sock:/var/ru
 sudo dpkg-reconfigure tzdata
 
 #yeni bir git kullanýcý tanýmlýyoruz.
-sudo adduser --disabled-login --gecos 'Gitea' git
+sudo adduser --disabled-login --gecos 'Redmine' git
 
-#Gitea için oluþtutulan git kullanýcýsýný docker a tanýtýyoruz.
+#Redmine için oluþtutulan git kullanýcýsýný docker a tanýtýyoruz.
 sudo usermod -aG docker git
 
 #oluþturduðumuz git kullanýcýsý kontrol ediyoruz 2. satýrdaki cevabý almamýz gerekiyor.
@@ -60,7 +60,7 @@ sudo mount -fav
 #/mnt/git                      : successfully mounted <<<<< !!!!
 
 
-#Gitea doker compose için açmýþ olduðumuz git kullanýcýna atlýyoruz.
+#Redmine doker compose için açmýþ olduðumuz git kullanýcýna atlýyoruz.
 sudo su - git 
 
 #bir dosya oluþturuyor ve içine giriyoruz.
@@ -76,6 +76,6 @@ docker-compose up -d
 
 #Git user den çýkmak için "exit" yazabilirsiniz.
 
-#kurulum tamamlandýktan sonra http://<local_ipadres>:5000 adresinden gitea kurulum sayfasýný çaðýrabilirsiniz.
+#kurulum tamamlandýktan sonra http://<local_ipadres>:5000 adresinden redmine kurulum sayfasýný çaðýrabilirsiniz.
 
 #Þimdi ayarlarý web üzerinden tamamlamak için readme.md dosyasýna geçiyoruz.
